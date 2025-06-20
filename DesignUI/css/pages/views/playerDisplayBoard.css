@@ -1,0 +1,189 @@
+.referee-practice {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.title-banner {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  background-color: #2a82e4;
+  color: white;
+  position: relative;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 20rpx;
+}
+
+.back-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.title-text {
+  flex: 1;
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 40rpx;
+  padding: 0 20rpx;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 100rpx;
+  right: 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.menu-item {
+  padding: 20rpx 40rpx;
+  font-size: 28rpx;
+  color: #333;
+  border-bottom: 1rpx solid #eee;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.content-container {
+  flex: 1;
+  padding: 20rpx;
+  overflow-y: auto;
+}
+
+.status-section {
+  display: flex;
+  margin-bottom: 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.status-item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.status-item.active {
+  color: #2a82e4;
+  border-bottom: 4rpx solid #2a82e4;
+}
+
+.match-list {
+  background-color: white;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.match-item {
+  padding: 30rpx;
+}
+
+.match-header {
+  margin-bottom: 20rpx;
+}
+
+.venue {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20rpx;
+}
+
+.match-info {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.players-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.player-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+}
+
+.player-name {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+
+.vs {
+  margin: 0 30rpx;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.score-display {
+  font-size: 24rpx;
+  color: #666;
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.score-btn {
+  background-color: #2a82e4;
+  color: white;
+  border: none;
+  border-radius: 50rpx;
+  padding: 15rpx 50rpx;
+  font-size: 28rpx;
+}
+
+.divider {
+  height: 1rpx;
+  background-color: #eee;
+  margin: 0 -30rpx;
+}
+
+.no-matches {
+  text-align: center;
+  padding: 50rpx;
+  font-size: 28rpx;
+  color: #999;
+}

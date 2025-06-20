@@ -1,0 +1,21 @@
+
+.container[data-v-1cf27b2a] {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.button-wrapper[data-v-1cf27b2a] {
+  width: 100%;
+}
+.nav-button[data-v-1cf27b2a] {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #007AFF;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* 可以根据需要添加更多样式 */
