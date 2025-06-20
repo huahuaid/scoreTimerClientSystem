@@ -1,0 +1,300 @@
+
+.match-confirmation[data-v-89e99334] {
+	  display: flex;
+	  flex-direction: column;
+	  min-height: 100vh;
+	  background-color: #f5f5f5;
+	  font-family: "Microsoft YaHei", sans-serif;
+	  position: relative;
+}
+	
+	/* 顶部比赛信息 */
+.match-header[data-v-89e99334] {
+	  background-color: white;
+	  padding: 15px 20px;
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.match-info[data-v-89e99334] {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-bottom: 15px;
+	  padding-bottom: 10px;
+	  border-bottom: 1px solid #eee;
+	  width: 100%;
+}
+.close-btn[data-v-89e99334] {
+	  font-size: 24px;
+	  background: none;
+	  border: none;
+	  cursor: pointer;
+	  color: #999;
+}
+.venue[data-v-89e99334] {
+	  font-size: 18px;
+	  font-weight: bold;
+	  color: #333;
+}
+.match-number[data-v-89e99334] {
+	  font-size: 16px;
+	  color: #666;
+}
+	
+	/* 选手信息 */
+.players-display[data-v-89e99334] {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 30px;
+	  padding: 10px 0;
+}
+.player[data-v-89e99334] {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+}
+.name[data-v-89e99334] {
+	  font-size: 16px;
+	  color: #333;
+	  margin-bottom: 5px;
+}
+.score[data-v-89e99334] {
+	  font-size: 24px;
+	  font-weight: bold;
+	  color: #1a5276;
+}
+.vs[data-v-89e99334] {
+	  font-size: 18px;
+	  font-weight: bold;
+	  color: #c0392b;
+}
+	
+	/* 中间确认文字 */
+.confirmation-text[data-v-89e99334] {
+	  flex: 1;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-size: 40px;
+	  color: #333;
+	  padding: 20px;
+	  text-align: center;
+}
+	
+	/* 底部按钮组 */
+.button-group[data-v-89e99334] {
+	  position: fixed;
+	  bottom: 20px;
+	  left: 25%;
+	  right: 25%;
+	  display: flex;
+	  justify-content: center;
+	  gap: 20px;
+}
+.cancel-btn[data-v-89e99334] {
+	  background-color: #e74c3c;
+	  color: white;
+	  padding: 12px 40px;
+	  border: none;
+	  border-radius: 6px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  transition: all 0.2s;
+}
+.confirm-btn[data-v-89e99334] {
+	  background-color: #3498db;
+	  color: white;
+	  padding: 12px 40px;
+	  border: none;
+	  border-radius: 6px;
+	  font-size: 16px;
+	  cursor: pointer;
+	  transition: all 0.2s;
+}
+.cancel-btn[data-v-89e99334]:hover,
+	.confirm-btn[data-v-89e99334]:hover {
+	  opacity: 0.9;
+	  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+.button-group[data-v-89e99334] {
+	    left: 10%;
+	    right: 10%;
+}
+}
+@media (max-width: 480px) {
+.button-group[data-v-89e99334] {
+	    left: 5%;
+	    right: 5%;
+	    flex-direction: column;
+	    gap: 10px;
+	    align-items: center;
+}
+.cancel-btn[data-v-89e99334],
+	  .confirm-btn[data-v-89e99334] {
+	    width: 100%;
+	    max-width: 200px;
+}
+.players-display[data-v-89e99334] {
+	    gap: 15px;
+}
+}
+
+/* 基础布局重置 */
+.page-wrapper[data-v-476b86be] {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* 改用min-height防止内容溢出 */
+  background-color: #f1f1f1;
+  overflow-x: hidden; /* 防止横向滚动 */
+}
+.container[data-v-476b86be] {
+  width: 100%;
+  padding-bottom: 80px; /* 为底部按钮留空间 */
+}
+/* 顶部导航栏 (移动端适配) */
+.bar[data-v-476b86be] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.back-button uni-button[data-v-476b86be] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+}
+/* 主要内容区域 */
+.content-wrapper[data-v-476b86be] {
+  padding: 15px;
+}
+.header[data-v-476b86be] {
+  text-align: center;
+  margin: 15px 0;
+}
+.header .title[data-v-476b86be] {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* 比赛比分显示 (移动端优化) */
+.CompetitionScore[data-v-476b86be] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.big-score[data-v-476b86be] {
+  font-size: 36px;
+  font-weight: bold;
+}
+.small-score[data-v-476b86be] {
+  font-size: 16px;
+  color: #666;
+}
+/* 球员区域布局 (改为垂直堆叠) */
+.content[data-v-476b86be] {
+  display: flex;
+  flex-direction: column; /* 移动端改为垂直布局 */
+  gap: 20px;
+}
+.player-info-left[data-v-476b86be],
+.player-info-right[data-v-476b86be] {
+  width: 100%; /* 占据全部宽度 */
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* 球员卡片样式 */
+.player[data-v-476b86be] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.player-avatar[data-v-476b86be] {
+  width: 80px !important; /* 移动端缩小头像 */
+  height: 80px !important;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.player-name[data-v-476b86be] {
+  font-size: 14px;
+  text-align: center;
+}
+/* 操作按钮区域 (移动端适配) */
+.actions[data-v-476b86be] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  position: fixed;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+.actions uni-button[data-v-476b86be] {
+  padding: 10px 15px;
+  font-size: 14px;
+  min-width: 100px;
+}
+/* 计时器样式 */
+.Timer[data-v-476b86be] {
+  text-align: center;
+  font-size: 24px;
+  margin: 15px 0;
+  font-family: monospace;
+}
+/* 加减分按钮 (移动端优化) */
+.left-add-score[data-v-476b86be],
+.right-add-score[data-v-476b86be] {
+  position: fixed;
+  bottom: 10px;
+  z-index: 100;
+}
+.left-add-score[data-v-476b86be] {
+  left: 10px;
+}
+.right-add-score[data-v-476b86be] {
+  right: 10px;
+}
+.add-btn[data-v-476b86be] {
+  width: 60px !important;
+  height: 60px !important;
+  font-size: 20px !important;
+}
+/* 小球样式调整 */
+.ball[data-v-476b86be] {
+  width: 30px !important;
+  height: 30px !important;
+  z-index: 200;
+}
+/* 媒体查询 - 平板及以上设备 */
+@media (min-width: 768px) {
+.content[data-v-476b86be] {
+    flex-direction: row; /* 大屏幕恢复水平布局 */
+}
+.player-info-left[data-v-476b86be],
+  .player-info-right[data-v-476b86be] {
+    width: 48%;
+}
+.player-avatar[data-v-476b86be] {
+    width: 120px !important;
+    height: 120px !important;
+}
+.add-btn[data-v-476b86be] {
+    width: 80px !important;
+    height: 80px !important;
+}
+}

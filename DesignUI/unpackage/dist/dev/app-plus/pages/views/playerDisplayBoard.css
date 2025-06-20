@@ -1,0 +1,161 @@
+.referee-practice {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.title-banner {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 0.9375rem;
+  background-color: #2a82e4;
+  color: white;
+  position: relative;
+}
+.back-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 0.625rem;
+}
+.back-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.title-text {
+  flex: 1;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+}
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0 0.625rem;
+}
+.menu-bar {
+  position: absolute;
+  top: 3.125rem;
+  right: 0.9375rem;
+  background-color: white;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0 0.3125rem rgba(0,0,0,0.1);
+  z-index: 100;
+}
+.menu-item {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  color: #333;
+  border-bottom: 0.03125rem solid #eee;
+}
+.menu-item:last-child {
+  border-bottom: none;
+}
+.content-container {
+  flex: 1;
+  padding: 0.625rem;
+  overflow-y: auto;
+}
+.status-section {
+  display: flex;
+  margin-bottom: 0.9375rem;
+  background-color: white;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.status-item {
+  flex: 1;
+  text-align: center;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+.status-item.active {
+  color: #2a82e4;
+  border-bottom: 0.125rem solid #2a82e4;
+}
+.match-list {
+  background-color: white;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.match-item {
+  padding: 0.9375rem;
+}
+.match-header {
+  margin-bottom: 0.625rem;
+}
+.venue {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 0.625rem;
+}
+.match-info {
+  font-size: 0.875rem;
+  color: #666;
+}
+.players-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+}
+.player-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player-avatar {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  margin-bottom: 0.3125rem;
+}
+.player-name {
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 0.3125rem;
+  text-align: center;
+}
+.vs {
+  margin: 0 0.9375rem;
+  font-size: 1rem;
+  color: #999;
+}
+.score-display {
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.3125rem;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+}
+.score-btn {
+  background-color: #2a82e4;
+  color: white;
+  border: none;
+  border-radius: 1.5625rem;
+  padding: 0.46875rem 1.5625rem;
+  font-size: 0.875rem;
+}
+.divider {
+  height: 0.03125rem;
+  background-color: #eee;
+  margin: 0 -0.9375rem;
+}
+.no-matches {
+  text-align: center;
+  padding: 1.5625rem;
+  font-size: 0.875rem;
+  color: #999;
+}
